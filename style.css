@@ -1,0 +1,98 @@
+:root {
+    --hover-color: #EEEEEE;
+    --bg-color: #fff;
+    --span-color: #387ADF;
+}
+
+* {
+    color: black;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+p {
+    margin-top: 5px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+h1::after {
+    color: var(--span-color);
+    content: " (Relt)";
+    font-size: 20px;
+    position: relative;
+    bottom: 30px;
+    right: 10px;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+h1:hover::after {
+    opacity: 1;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: black;
+    margin-bottom: 40px;
+    margin-right: 310px;
+}
+
+.subtitle {
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.socials {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-top: 5px;
+    display: inline-block;
+    position: relative;
+    border: 1px solid var(--hover-color);
+    border-radius: 5px;
+    padding: 5px;
+    transition: background 0.4s ease;
+}
+
+.socials:hover {
+    background: var(--hover-color);
+}
+
+.span-blue {
+    font-weight: bold;
+    color: var(--span-color);
+}
+
+#email {
+    color: black;
+}  
+
+#email:hover {
+    color: var(--span-color);
+}
+
+#container {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1;
+}
