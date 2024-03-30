@@ -1,6 +1,7 @@
 :root {
-    --hover-color: #EEEEEE;
-    --bg-color: #fff;
+    --hover-color: #E3E7E9;
+    --border-color: #D8DADB;
+    --bg-color: #F1F3F4;
     --span-color: #387ADF;
 }
 
@@ -65,7 +66,7 @@ hr {
     margin-top: 5px;
     display: inline-block;
     position: relative;
-    border: 1px solid var(--hover-color);
+    border: 1px solid var(--border-color);
     border-radius: 5px;
     padding: 5px;
     transition: background 0.4s ease;
