@@ -81,14 +81,6 @@ hr {
     color: var(--span-color);
 }
 
-#email {
-    color: black;
-}  
-
-#email:hover {
-    color: var(--span-color);
-}
-
 #container {
     position: absolute;
     inset: 0;
